@@ -1,0 +1,354 @@
+import React from 'react';
+import { Phone, MapPin, Clock, Award, ShieldCheck, Truck } from 'lucide-react';
+import { Button } from '../components/ui/button';
+
+const Home = () => {
+  const handleCall = (number) => {
+    window.location.href = `tel:${number}`;
+  };
+
+  const handleWhatsApp = (number) => {
+    window.open(`https://wa.me/91${number}`, '_blank');
+  };
+
+  const cementBrands = [
+    'UltraTech Cement',
+    'Ambuja Cement',
+    'Chettinad Cement',
+    'Maha Cement',
+    'ACC Cement',
+    'Sagar Cement',
+    'MPL Cement',
+    'Dalmia Cement'
+  ];
+
+  const productCategories = [
+    'Hardware Materials',
+    'Electric & Water Motors',
+    'GI Fittings',
+    'Profile Sheets',
+    'MS Sheets & Pipes',
+    'Polycarbonate Sheets',
+    'Engineering Items',
+    'Tarpaulins',
+    'Water Pipes',
+    'Hand Bore Pumps',
+    'Tree Guards',
+    'Bleaching Powder',
+    'PVC Plumbing Items',
+    'Tools & Safety Equipment',
+    'Fencing Materials',
+    'Weld Mesh',
+    'Barbed Wire'
+  ];
+
+  const whyChooseUs = [
+    {
+      icon: Award,
+      title: 'Trusted Since 1995',
+      description: 'Over 30 years of reliable service to builders and contractors across Telangana'
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Authorized Dealer',
+      description: 'Official dealer for top cement brands - genuine products guaranteed'
+    },
+    {
+      icon: Truck,
+      title: 'Wide Product Range',
+      description: 'Complete construction materials and hardware solutions under one roof'
+    }
+  ];
+
+  return (
+    <div className="home-page">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-background">
+          <img 
+            src="https://images.unsplash.com/photo-1599995903128-531fc7fb694b" 
+            alt="Construction Excellence"
+            className="hero-image"
+          />
+          <div className="hero-overlay"></div>
+        </div>
+        <div className="hero-content">
+          <div className="hero-badge caption">Established 1995</div>
+          <h1 className="hero-title">JAGADISH TRADERS</h1>
+          <p className="body-large" style={{ maxWidth: '30ch', marginTop: '24px', marginBottom: '32px' }}>
+            Trusted Cement Dealer & Construction Materials Supplier in Karimnagar
+          </p>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <Button 
+              className="btn-primary" 
+              onClick={() => handleCall('9898989989')}
+            >
+              <Phone size={18} style={{ marginRight: '8px' }} />
+              Call Now
+            </Button>
+            <Button 
+              className="btn-secondary" 
+              onClick={() => handleWhatsApp('9898989989')}
+            >
+              WhatsApp Us
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="about-section section-padding">
+        <div className="container">
+          <div className="about-grid">
+            <div className="about-content">
+              <span className="caption">About Us</span>
+              <h2 className="heading-2" style={{ marginTop: '16px', marginBottom: '24px' }}>
+                BUILDING TRUST FOR OVER 30 YEARS
+              </h2>
+              <p className="body-medium" style={{ marginBottom: '20px' }}>
+                Since 1995, Jagadish Traders has been the preferred choice for builders, contractors, and construction professionals across Karimnagar and Telangana. What started as a commitment to quality has grown into one of the region's most trusted construction materials suppliers.
+              </p>
+              <p className="body-small" style={{ marginBottom: '24px' }}>
+                As authorized dealers for India's leading cement brands and suppliers of comprehensive construction materials, we take pride in delivering genuine products, competitive pricing, and reliable service. Our family-run business, led by Mr. Jagadisheshwar and Mr. Sai Srujan, continues the legacy of trust and excellence.
+              </p>
+              <div className="proprietor-info">
+                <p className="body-small" style={{ fontWeight: 600 }}>
+                  Proprietors: Mr. Jagadisheshwar | Mr. Sai Srujan
+                </p>
+              </div>
+            </div>
+            <div className="about-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1761805618757-9d2b9552ee32" 
+                alt="Jagadish Traders Warehouse"
+                className="about-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="why-section section-padding" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+            <span className="caption">Why Choose Us</span>
+            <h2 className="heading-2" style={{ marginTop: '16px' }}>
+              YOUR RELIABLE PARTNER
+            </h2>
+          </div>
+          <div className="why-grid">
+            {whyChooseUs.map((item, index) => (
+              <div key={index} className="why-card">
+                <div className="why-icon">
+                  <item.icon size={32} strokeWidth={2} />
+                </div>
+                <h3 className="heading-5" style={{ marginTop: '20px', marginBottom: '12px' }}>
+                  {item.title}
+                </h3>
+                <p className="body-small">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Authorized Cement Brands */}
+      <section className="cement-section section-padding">
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <span className="caption">Authorized Dealer</span>
+            <h2 className="heading-2" style={{ marginTop: '16px', marginBottom: '16px' }}>
+              PREMIUM CEMENT BRANDS
+            </h2>
+            <p className="body-medium">
+              Official dealer for India's most trusted cement manufacturers
+            </p>
+          </div>
+          <div className="cement-grid">
+            {cementBrands.map((brand, index) => (
+              <div key={index} className="cement-card">
+                <div className="cement-card-inner">
+                  <h3 className="heading-6">{brand}</h3>
+                  <span className="caption" style={{ color: 'var(--text-secondary)', marginTop: '8px', display: 'block' }}>
+                    Authorized Dealer
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="cement-showcase">
+            <img 
+              src="https://images.unsplash.com/photo-1763926025477-423847028860" 
+              alt="Quality Construction Materials"
+              className="cement-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="products-section section-padding" style={{ backgroundColor: 'var(--bg-card)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <span className="caption">Our Products</span>
+            <h2 className="heading-2" style={{ marginTop: '16px', marginBottom: '16px' }}>
+              COMPLETE CONSTRUCTION SOLUTIONS
+            </h2>
+            <p className="body-medium">
+              Everything you need for your construction project
+            </p>
+          </div>
+          <div className="products-showcase-grid">
+            <div className="product-showcase-card">
+              <img 
+                src="https://images.unsplash.com/photo-1631856954913-c751a44490ec" 
+                alt="Hardware Materials"
+                className="product-showcase-image"
+              />
+              <div className="product-overlay">
+                <h3 className="heading-5">Hardware & Tools</h3>
+              </div>
+            </div>
+            <div className="product-showcase-card">
+              <img 
+                src="https://images.unsplash.com/photo-1763926025678-95d196d0ab28" 
+                alt="Industrial Materials"
+                className="product-showcase-image"
+              />
+              <div className="product-overlay">
+                <h3 className="heading-5">Industrial Supplies</h3>
+              </div>
+            </div>
+            <div className="product-showcase-card">
+              <img 
+                src="https://images.unsplash.com/photo-1759200165738-6366977a73c6" 
+                alt="Plumbing & Fittings"
+                className="product-showcase-image"
+              />
+              <div className="product-overlay">
+                <h3 className="heading-5">Plumbing & Fittings</h3>
+              </div>
+            </div>
+          </div>
+          <div className="products-grid">
+            {productCategories.map((product, index) => (
+              <div key={index} className="product-item">
+                <span className="product-bullet">•</span>
+                <span className="body-small">{product}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact-section section-padding">
+        <div className="container">
+          <div className="contact-grid">
+            <div className="contact-info">
+              <span className="caption">Get In Touch</span>
+              <h2 className="heading-2" style={{ marginTop: '16px', marginBottom: '32px' }}>
+                VISIT OR CALL US TODAY
+              </h2>
+              
+              <div className="contact-details">
+                <div className="contact-item">
+                  <MapPin size={24} className="contact-icon" />
+                  <div>
+                    <h4 className="heading-6" style={{ marginBottom: '8px' }}>Address</h4>
+                    <p className="body-small">
+                      Jagadish Traders<br />
+                      Prakash Gunj<br />
+                      Karimnagar – 505001<br />
+                      Telangana, India
+                    </p>
+                  </div>
+                </div>
+
+                <div className="contact-item">
+                  <Phone size={24} className="contact-icon" />
+                  <div>
+                    <h4 className="heading-6" style={{ marginBottom: '8px' }}>Phone Numbers</h4>
+                    <p className="body-small" style={{ marginBottom: '8px' }}>
+                      <a href="tel:9898989989" className="contact-link">+91 98989 89989</a>
+                    </p>
+                    <p className="body-small">
+                      <a href="tel:9778787878" className="contact-link">+91 97787 87878</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="contact-item">
+                  <Clock size={24} className="contact-icon" />
+                  <div>
+                    <h4 className="heading-6" style={{ marginBottom: '8px' }}>Business Hours</h4>
+                    <p className="body-small">
+                      Monday - Saturday: 9:00 AM - 7:00 PM<br />
+                      Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="contact-buttons">
+                <Button 
+                  className="btn-primary" 
+                  onClick={() => handleCall('9898989989')}
+                >
+                  <Phone size={18} style={{ marginRight: '8px' }} />
+                  Call: 98989 89989
+                </Button>
+                <Button 
+                  className="btn-secondary" 
+                  onClick={() => handleWhatsApp('9898989989')}
+                >
+                  WhatsApp Now
+                </Button>
+              </div>
+            </div>
+
+            <div className="map-container">
+              <iframe
+                title="Jagadish Traders Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.4!2d79.1231!3d18.4386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI2JzE5LjAiTiA3OcKwMDcnMjMuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: '8px' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="footer-brand">
+              <h3 className="heading-4" style={{ marginBottom: '12px' }}>JAGADISH TRADERS</h3>
+              <p className="body-small">
+                Trusted Construction Materials Supplier Since 1995
+              </p>
+            </div>
+            <div className="footer-links">
+              <p className="body-small">
+                Prakash Gunj, Karimnagar – 505001, Telangana, India
+              </p>
+              <p className="body-small" style={{ marginTop: '8px' }}>
+                © 2025 Jagadish Traders. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;
