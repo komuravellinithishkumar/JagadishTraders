@@ -114,33 +114,24 @@ const Home = () => {
       {/* About Section */}
       <section className="about-section section-padding">
         <div className="container">
-          <div className="about-grid">
-            <div className="about-content">
-              <span className="caption">About Us</span>
-              <h2 className="heading-2" style={{ marginTop: '16px', marginBottom: '24px' }}>
-                BUILDING TRUST FOR OVER 30 YEARS
-              </h2>
-              <p className="body-medium" style={{ marginBottom: '20px' }}>
-                Since 1995, Jagadish Traders has been the preferred choice for builders, contractors, and construction professionals across Karimnagar and Telangana. What started as a commitment to quality has grown into one of the region's most trusted construction materials suppliers.
+          <div className="about-content-single">
+            <span className="caption">About Us</span>
+            <h2 className="heading-2" style={{ marginTop: '16px', marginBottom: '24px' }}>
+              BUILDING TRUST FOR OVER 30 YEARS
+            </h2>
+            <p className="body-medium" style={{ marginBottom: '20px' }}>
+              Since 1995, Jagadish Traders has been the preferred choice for builders, contractors, and construction professionals across Karimnagar and Telangana. What started as a commitment to quality has grown into one of the region's most trusted construction materials suppliers.
+            </p>
+            <p className="body-small" style={{ marginBottom: '24px' }}>
+              As authorized dealers for India's leading cement brands and suppliers of comprehensive construction materials, we take pride in delivering genuine products, competitive pricing, and reliable service. Our family-run business, led by Lion. K. Jagadishwar and Mr. Sai Srujan, continues the legacy of trust and excellence.
+            </p>
+            <div className="proprietor-info">
+              <p className="body-small" style={{ fontWeight: 600 }}>
+                Proprietors: Lion. K. Jagadishwar | Mr. Sai Srujan
               </p>
-              <p className="body-small" style={{ marginBottom: '24px' }}>
-                As authorized dealers for India's leading cement brands and suppliers of comprehensive construction materials, we take pride in delivering genuine products, competitive pricing, and reliable service. Our family-run business, led by Lion. K. Jagadishwar and Mr. Sai Srujan, continues the legacy of trust and excellence.
+              <p className="body-small" style={{ marginTop: '8px' }}>
+                📞 +91 98490 59948 | +91 93987 98984
               </p>
-              <div className="proprietor-info">
-                <p className="body-small" style={{ fontWeight: 600 }}>
-                  Proprietors: Lion. K. Jagadishwar | Mr. Sai Srujan
-                </p>
-                <p className="body-small" style={{ marginTop: '8px' }}>
-                  📞 98490 59948 | 93987 98984
-                </p>
-              </div>
-            </div>
-            <div className="about-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1761805618757-9d2b9552ee32" 
-                alt="Jagadish Traders Warehouse"
-                className="about-image"
-              />
             </div>
           </div>
         </div>

@@ -71,29 +71,10 @@
 }
 
 /* About Section */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-image-wrapper {
-  position: relative;
-  height: 500px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.about-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about-content-single {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .proprietor-info {
@@ -304,7 +285,6 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
