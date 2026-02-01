@@ -103,9 +103,9 @@ const Home = () => {
             </Button>
             <Button 
               className="btn-secondary" 
-              onClick={() => handleWhatsApp('9849059948')}
+              onClick={() => handleWhatsApp('9398798984')}
             >
-              WhatsApp: +91 98490 59948
+              WhatsApp: +91 93987 98984
             </Button>
           </div>
         </div>
@@ -331,9 +331,9 @@ const Home = () => {
                 </Button>
                 <Button 
                   className="btn-secondary" 
-                  onClick={() => handleWhatsApp('9849059948')}
+                  onClick={() => handleWhatsApp('9398798984')}
                 >
-                  WhatsApp: +91 98490 59948
+                  WhatsApp: +91 93987 98984
                 </Button>
               </div>
             </div>
