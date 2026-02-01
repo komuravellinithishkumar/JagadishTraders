@@ -92,20 +92,20 @@ const Home = () => {
               onClick={() => handleCall('9849059948')}
             >
               <Phone size={18} style={{ marginRight: '8px' }} />
-              Call: 98490 59948
+              +91 98490 59948
             </Button>
             <Button 
               className="btn-primary" 
               onClick={() => handleCall('9398798984')}
             >
               <Phone size={18} style={{ marginRight: '8px' }} />
-              Call: 93987 98984
+              +91 93987 98984
             </Button>
             <Button 
               className="btn-secondary" 
               onClick={() => handleWhatsApp('9849059948')}
             >
-              WhatsApp Us
+              WhatsApp: +91 98490 59948
             </Button>
           </div>
         </div>
@@ -279,7 +279,7 @@ const Home = () => {
                     <h4 className="heading-6" style={{ marginBottom: '8px' }}>Address</h4>
                     <p className="body-small">
                       Jagadish Traders<br />
-                      Prakash Gunj<br />
+                      3 Prakash Gunj<br />
                       Karimnagar – 505001<br />
                       Telangana, India
                     </p>
@@ -319,7 +319,7 @@ const Home = () => {
                   onClick={() => handleCall('9849059948')}
                 >
                   <Phone size={18} style={{ marginRight: '8px' }} />
-                  Call: 98490 59948
+                  +91 98490 59948
                 </Button>
                 <Button 
                   className="btn-primary" 
@@ -327,21 +327,21 @@ const Home = () => {
                   style={{ background: 'var(--secondary-olive)', color: 'var(--text-primary)' }}
                 >
                   <Phone size={18} style={{ marginRight: '8px' }} />
-                  Call: 93987 98984
+                  +91 93987 98984
                 </Button>
                 <Button 
                   className="btn-secondary" 
                   onClick={() => handleWhatsApp('9849059948')}
                 >
-                  WhatsApp Now
+                  WhatsApp: +91 98490 59948
                 </Button>
               </div>
             </div>
 
             <div className="map-container">
               <iframe
-                title="Jagadish Traders Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.4!2d79.1231!3d18.4386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI2JzE5LjAiTiA3OcKwMDcnMjMuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                title="Jagadish Traders Location - 3 Prakash Gunj, Karimnagar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.234!2d79.1244!3d18.4389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334c8e1c8e8e8f%3A0x1234567890abcdef!2sPrakash%20Gunj%2C%20Karimnagar%2C%20Telangana%20505001!5e0!3m2!1sen!2sin!4v1234567890123"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: '8px' }}
@@ -349,6 +349,17 @@ const Home = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+              <div style={{ marginTop: '16px', textAlign: 'center' }}>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=3+Prakash+Gunj+Karimnagar+Telangana+505001" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="body-small"
+                  style={{ color: 'var(--brand-primary)', textDecoration: 'underline' }}
+                >
+                  Open in Google Maps →
+                </a>
+              </div>
             </div>
           </div>
         </div>
