@@ -1,0 +1,42 @@
+╔══════════════════════════════════════════════════════════════╗
+║         NETLIFY BUILD SETTINGS - COPY THESE EXACTLY          ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 Base directory:
+   (leave empty or type a single dot)
+   .
+
+🔨 Build command:
+   yarn build
+
+📁 Publish directory:
+   build
+
+🔢 Node version: (optional)
+   18
+
+🔐 Environment variables:
+   (Skip this - leave empty for now)
+
+═══════════════════════════════════════════════════════════════
+
+✅ AFTER DEPLOYMENT - CHANGE SITE NAME:
+
+Go to: Site settings → Site details → Change site name
+
+Suggested names:
+• jagadish-traders
+• jagadishtraders-karimnagar
+• jagadish-traders-cement
+
+Your URL will become:
+https://jagadish-traders.netlify.app
+
+═══════════════════════════════════════════════════════════════
+
+🚀 THAT'S ALL YOU NEED!
+
+Click "Deploy site" and wait 2-3 minutes.
+Your website will be LIVE! 🎉
+
+═══════════════════════════════════════════════════════════════
