@@ -8,7 +8,8 @@ const Home = () => {
   };
 
   const handleWhatsApp = (number) => {
-    window.open(`https://wa.me/91${number}`, '_blank');
+    const cleanNumber = number.replace(/\s/g, '');
+    window.open(`https://wa.me/91${cleanNumber}`, '_blank');
   };
 
   const cementBrands = [
@@ -73,6 +74,13 @@ const Home = () => {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
+          <div className="hero-logo-container" style={{ marginBottom: '24px' }}>
+            <img 
+              src="/logo.png" 
+              alt="Jagadish Traders Logo"
+              style={{ maxWidth: '200px', height: 'auto' }}
+            />
+          </div>
           <div className="hero-badge caption">Established 1995</div>
           <h1 className="hero-title">JAGADISH TRADERS</h1>
           <p className="body-large" style={{ maxWidth: '30ch', marginTop: '24px', marginBottom: '32px' }}>
@@ -81,14 +89,14 @@ const Home = () => {
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <Button 
               className="btn-primary" 
-              onClick={() => handleCall('9898989989')}
+              onClick={() => handleCall('9849059948')}
             >
               <Phone size={18} style={{ marginRight: '8px' }} />
-              Call Now
+              Call: 98490 59948
             </Button>
             <Button 
               className="btn-secondary" 
-              onClick={() => handleWhatsApp('9898989989')}
+              onClick={() => handleWhatsApp('9849059948')}
             >
               WhatsApp Us
             </Button>
@@ -109,11 +117,14 @@ const Home = () => {
                 Since 1995, Jagadish Traders has been the preferred choice for builders, contractors, and construction professionals across Karimnagar and Telangana. What started as a commitment to quality has grown into one of the region's most trusted construction materials suppliers.
               </p>
               <p className="body-small" style={{ marginBottom: '24px' }}>
-                As authorized dealers for India's leading cement brands and suppliers of comprehensive construction materials, we take pride in delivering genuine products, competitive pricing, and reliable service. Our family-run business, led by Mr. Jagadisheshwar and Mr. Sai Srujan, continues the legacy of trust and excellence.
+                As authorized dealers for India's leading cement brands and suppliers of comprehensive construction materials, we take pride in delivering genuine products, competitive pricing, and reliable service. Our family-run business, led by Lion. K. Jagadishwar and Mr. Sai Srujan, continues the legacy of trust and excellence.
               </p>
               <div className="proprietor-info">
                 <p className="body-small" style={{ fontWeight: 600 }}>
-                  Proprietors: Mr. Jagadisheshwar | Mr. Sai Srujan
+                  Proprietors: Lion. K. Jagadishwar | Mr. Sai Srujan
+                </p>
+                <p className="body-small" style={{ marginTop: '8px' }}>
+                  📞 98490 59948 | 93987 98984
                 </p>
               </div>
             </div>
@@ -272,11 +283,13 @@ const Home = () => {
                   <Phone size={24} className="contact-icon" />
                   <div>
                     <h4 className="heading-6" style={{ marginBottom: '8px' }}>Phone Numbers</h4>
-                    <p className="body-small" style={{ marginBottom: '8px' }}>
-                      <a href="tel:9898989989" className="contact-link">+91 98989 89989</a>
+                    <p className="body-small" style={{ marginBottom: '4px' }}>
+                      <a href="tel:9849059948" className="contact-link">+91 98490 59948</a>
+                      <span style={{ color: 'var(--text-muted)', marginLeft: '8px' }}>(K. Jagadishwar)</span>
                     </p>
                     <p className="body-small">
-                      <a href="tel:9778787878" className="contact-link">+91 97787 87878</a>
+                      <a href="tel:9398798984" className="contact-link">+91 93987 98984</a>
+                      <span style={{ color: 'var(--text-muted)', marginLeft: '8px' }}>(Sai Srujan)</span>
                     </p>
                   </div>
                 </div>
@@ -296,14 +309,22 @@ const Home = () => {
               <div className="contact-buttons">
                 <Button 
                   className="btn-primary" 
-                  onClick={() => handleCall('9898989989')}
+                  onClick={() => handleCall('9849059948')}
                 >
                   <Phone size={18} style={{ marginRight: '8px' }} />
-                  Call: 98989 89989
+                  Call: 98490 59948
+                </Button>
+                <Button 
+                  className="btn-primary" 
+                  onClick={() => handleCall('9398798984')}
+                  style={{ background: 'var(--secondary-olive)', color: 'var(--text-primary)' }}
+                >
+                  <Phone size={18} style={{ marginRight: '8px' }} />
+                  Call: 93987 98984
                 </Button>
                 <Button 
                   className="btn-secondary" 
-                  onClick={() => handleWhatsApp('9898989989')}
+                  onClick={() => handleWhatsApp('9849059948')}
                 >
                   WhatsApp Now
                 </Button>
@@ -331,16 +352,34 @@ const Home = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-brand">
+              <img 
+                src="/logo.png" 
+                alt="Jagadish Traders Logo"
+                style={{ maxWidth: '120px', height: 'auto', marginBottom: '16px' }}
+              />
               <h3 className="heading-4" style={{ marginBottom: '12px' }}>JAGADISH TRADERS</h3>
               <p className="body-small">
                 Trusted Construction Materials Supplier Since 1995
               </p>
+              <div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
+                <a href="tel:9849059948" className="body-small contact-link">
+                  +91 98490 59948
+                </a>
+                <span style={{ color: 'var(--text-muted)' }}>|</span>
+                <a href="tel:9398798984" className="body-small contact-link">
+                  +91 93987 98984
+                </a>
+              </div>
             </div>
             <div className="footer-links">
               <p className="body-small">
-                Prakash Gunj, Karimnagar – 505001, Telangana, India
+                3 Prakash Gunj, Karimnagar – 505001, Telangana, India
               </p>
-              <p className="body-small" style={{ marginTop: '8px' }}>
+              <p className="body-small" style={{ marginTop: '12px' }}>
+                <strong>Authorized Dealer for:</strong><br />
+                UltraTech, Ambuja, ACC, Chettinad, Maha, Sagar, MPL, Dalmia Cement
+              </p>
+              <p className="body-small" style={{ marginTop: '12px', color: 'var(--text-muted)' }}>
                 © 2025 Jagadish Traders. All rights reserved.
               </p>
             </div>
