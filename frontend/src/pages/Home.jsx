@@ -279,9 +279,9 @@ const Home = () => {
                     <h4 className="heading-6" style={{ marginBottom: '8px' }}>Address</h4>
                     <p className="body-small">
                       Jagadish Traders<br />
-                      3 Prakash Gunj<br />
-                      Karimnagar – 505001<br />
-                      Telangana, India
+                      Shop No 2, Prakasham Gunj Rd<br />
+                      Ashoknagar, Karimnagar<br />
+                      Telangana 505001, India
                     </p>
                   </div>
                 </div>
@@ -340,8 +340,8 @@ const Home = () => {
 
             <div className="map-container">
               <iframe
-                title="Jagadish Traders Location - 3 Prakash Gunj, Karimnagar"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.234!2d79.1244!3d18.4389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334c8e1c8e8e8f%3A0x1234567890abcdef!2sPrakash%20Gunj%2C%20Karimnagar%2C%20Telangana%20505001!5e0!3m2!1sen!2sin!4v1234567890123"
+                title="Jagadish Traders Location - Shop No 2, Prakasham Gunj Rd, Ashoknagar, Karimnagar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.834!2d79.1246!3d18.4385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fc9a1c2e8e9%3A0x1234567890abcdef!2sPrakasham%20Gunj%20Rd%2C%20Ashoknagar%2C%20Karimnagar%2C%20Telangana%20505001!5e0!3m2!1sen!2sin!4v1234567890123"
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: '8px' }}
@@ -351,7 +351,7 @@ const Home = () => {
               ></iframe>
               <div style={{ marginTop: '16px', textAlign: 'center' }}>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=3+Prakash+Gunj+Karimnagar+Telangana+505001" 
+                  href="https://www.google.com/maps/search/?api=1&query=Shop+No+2+Prakasham+Gunj+Rd+Ashoknagar+Karimnagar+Telangana+505001+India" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="body-small"
@@ -391,7 +391,7 @@ const Home = () => {
             </div>
             <div className="footer-links">
               <p className="body-small">
-                3 Prakash Gunj, Karimnagar – 505001, Telangana, India
+                Shop No 2, Prakasham Gunj Rd, Ashoknagar, Karimnagar – 505001, Telangana, India
               </p>
               <p className="body-small" style={{ marginTop: '12px' }}>
                 <strong>Authorized Dealer for:</strong><br />
