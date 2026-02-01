@@ -63,29 +63,6 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* Top Header with Contact Numbers */}
-      <header className="top-header">
-        <div className="top-header-container">
-          <div className="header-logo">
-            <img 
-              src="/logo.png" 
-              alt="Jagadish Traders"
-              style={{ height: '50px', width: 'auto' }}
-            />
-          </div>
-          <div className="header-contact-buttons">
-            <a href="tel:9849059948" className="header-call-btn">
-              <Phone size={16} />
-              <span>98490 59948</span>
-            </a>
-            <a href="tel:9398798984" className="header-call-btn">
-              <Phone size={16} />
-              <span>93987 98984</span>
-            </a>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-background">
@@ -116,6 +93,13 @@ const Home = () => {
             >
               <Phone size={18} style={{ marginRight: '8px' }} />
               Call: 98490 59948
+            </Button>
+            <Button 
+              className="btn-primary" 
+              onClick={() => handleCall('9398798984')}
+            >
+              <Phone size={18} style={{ marginRight: '8px' }} />
+              Call: 93987 98984
             </Button>
             <Button 
               className="btn-secondary" 

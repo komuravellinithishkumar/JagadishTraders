@@ -1,102 +1,3 @@
-/* Top Header with Contact Numbers */
-.top-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(26, 28, 27, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-medium);
-  z-index: 1000;
-  padding: 12px 0;
-}
-
-.top-header-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo img {
-  height: 50px;
-  width: auto;
-}
-
-.header-contact-buttons {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.header-call-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--brand-primary);
-  color: var(--text-inverse);
-  padding: 10px 20px;
-  border-radius: 10rem;
-  text-decoration: none;
-  font-family: 'Inter', Arial, sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.header-call-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-.header-call-btn:active {
-  transform: scale(0.98);
-}
-
-/* Mobile Header */
-@media (max-width: 767px) {
-  .top-header {
-    padding: 8px 0;
-  }
-
-  .top-header-container {
-    padding: 0 20px;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .header-logo img {
-    height: 40px;
-  }
-
-  .header-contact-buttons {
-    width: 100%;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .header-call-btn {
-    width: 100%;
-    justify-content: center;
-    padding: 12px 16px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .top-header-container {
-    padding: 0 30px;
-  }
-
-  .header-call-btn {
-    font-size: 0.85rem;
-    padding: 8px 16px;
-  }
-}
-
 /* Hero Section - Pixel Pushers Style */
 .hero-section {
   background: var(--bg-page);
@@ -104,9 +5,8 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 160px 40px 80px;
+  padding: 120px 40px 80px;
   overflow: hidden;
-  margin-top: 0;
 }
 
 .hero-background {
@@ -429,7 +329,7 @@
 
 @media (max-width: 767px) {
   .hero-section {
-    padding: 180px 20px 60px;
+    padding: 100px 20px 60px;
     min-height: 80vh;
   }
 
